@@ -1,0 +1,57 @@
+:root {
+  --main-color: #37517e;
+  --blue: #37517e;
+}
+
+.hero-section {
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.hero-section a {
+  color: white !important;
+}
+
+.dropdown-menu a {
+  color: black !important;
+}
+.anim-image {
+  animation: move 1s linear alternate infinite;
+}
+.brand-images img {
+  filter: grayscale(0%);
+  transition: all 0.2sec;
+}
+.brand-images img:hover {
+  filter: grayscale(100%);
+  scale: 1s;
+}
+.text-blue {
+  color: var(--blue) !important;
+}
+.gray {
+  width: 13%;
+  height: 1px;
+  background-color: rgb(165, 164, 164);
+  position: relative;
+  margin: auto;
+}
+.blue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 2px;
+  background-color: #47b2e4;
+  margin: auto;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
